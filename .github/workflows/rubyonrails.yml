@@ -24,7 +24,7 @@ jobs:
           POSTGRES_PASSWORD: <%= ENV["PIX_DEV_DATABASE_PASSWORD"] %>
     env:
       RAILS_ENV: test
-      DATABASE_URL: "postgres://rails:password@localhost:5432/pix_test"
+      DATABASE_URL: "postgres://localhost:5432/pix_test"
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
