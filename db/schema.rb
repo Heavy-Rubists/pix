@@ -10,9 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_10_27_201606) do
+ActiveRecord::Schema[7.1].define(version: 2023_10_27_232742) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "access_levels", force: :cascade do |t|
+    t.string "title", null: false
+  end
 
   create_table "comments", force: :cascade do |t|
     t.text "content", null: false
@@ -33,6 +37,13 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_27_201606) do
     t.index ["user_id"], name: "index_favourites_on_user_id"
   end
 
+  create_table "management_rights", force: :cascade do |t|
+    t.bigint "access_level_id", null: false
+    t.bigint "user_id", null: false
+    t.index ["access_level_id"], name: "index_management_rights_on_access_level_id"
+    t.index ["user_id"], name: "index_management_rights_on_user_id"
+  end
+
   create_table "photos", force: :cascade do |t|
     t.text "description"
     t.text "as_url", null: false
@@ -41,6 +52,22 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_27_201606) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_photos_on_user_id"
+  end
+
+  create_table "tag_affiliations", force: :cascade do |t|
+    t.bigint "photo_id"
+    t.bigint "tag_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["photo_id"], name: "index_tag_affiliations_on_photo_id"
+    t.index ["tag_id"], name: "index_tag_affiliations_on_tag_id"
+  end
+
+  create_table "tags", force: :cascade do |t|
+    t.string "content", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["content"], name: "index_tags_on_content", unique: true
   end
 
   create_table "users", force: :cascade do |t|
