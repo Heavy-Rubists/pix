@@ -1,0 +1,132 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+html {
+	background-origin: border-box;
+}
+body {
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	background: #141518;
+}
+.page_header {
+	width: 100%;
+	flex-shrink: 0;
+	background: url("../images/account_images/account_background.jpg");
+
+}
+.page_navigation {
+	height: 36px;
+	display:flex;
+	padding-top: 16px;
+
+}
+.logo {
+	width: 94px;
+	height: 34px;
+	flex-shrink: 0;
+	padding-left: 16px;
+}
+.new_post_button {
+	border-radius: 3px;
+	background: #1BB76E;
+	box-shadow: 0px 6px 10px 0px rgba(27, 28, 30, 0.31);
+	width: 120.53px;
+	display: flex;
+	height: 35px;
+	padding: 7px 13.8px 6px 9px;
+	align-items: center;
+	gap: 13px;
+	
+}
+.plus {
+	width: 22px;
+	height: 22px;
+	flex-shrink: 0;
+}
+
+.new_post_button_text {
+	width: 62.73px;
+	height: 15px;
+	color: #FFF;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13.594px;
+	font-style: normal;
+	line-height: 17.25px; /* 126.897% */
+}
+
+.search_bar {
+	display: inline-flex;
+	padding: 10px 36px 10px 11px;
+	align-items: center;
+	flex-shrink: 0;
+	border-radius: 3px;
+	opacity: 0.8;
+	background: rgba(255, 255, 255, 0.25);
+	border: none;
+	margin-left: 457.56px;
+	width: 550px;
+}
+
+.small_avatar {
+	height: 37px;
+	width: 37px;
+	margin-right: 0;
+	vertical-align: middle;
+	margin-left: 0;
+	display: inline-block;
+	border-radius: 64px;
+}
+.nickname {
+	padding-left: 471px;
+}
+
+.profilecover {
+	width: 1564px;
+	height: 258px;
+	padding-top: 11px;
+	padding-left: 178px;
+	display: flex;
+}
+.big_avatar {
+	width: 128px;
+	height: 128px;
+	flex-shrink: 0;
+	border-radius: 64px;
+	margin-top: 52px;
+}
+.nick {
+	width: 200.4px;
+	height: 44px;
+	color: #F2F2F2;
+	font-family: Inter;
+	font-size: 41.078px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 50.6px; /* 123.18% */
+	padding-top: 81.39px;
+	padding-left: 24px;
+}
+.links {
+	display: flex;
+	padding-left: 248px;
+	padding-top: 211px;
+	gap: 30px;
+}
+.lnks {
+	color: #FFF;
+	text-align: center;
+	font-family: Inter;
+	font-size: 15.25px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18.4px; /* 120.656% */
+	text-transform: uppercase;
+}
