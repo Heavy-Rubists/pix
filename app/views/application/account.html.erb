@@ -12,15 +12,15 @@
 	<header class="page_header">
 		<navigation class="page_navigation">
 			<p class="logo">PIX</p>
-			<button class="new_post_button"><img class="plus" src="img/plus_button.svg"><span class="new_post_button_text">New post</span></button>
+			<button class="new_post_button"><%=image_tag("account_images/plus_button.svg", class: 'plus')%><span class="new_post_button_text">New post</span></button>
 			<input class="search_bar" type="text" placeholder="ok, guys, i guess that's it!">
 			<div class="usr">
 				<span class="nickname">User Name</span>
-				<img class="small_avatar"src="img/avatar.png">
+				<%=image_tag("account_images/avatar.png", class: 'small_avatar')%>
 			</div>
 		</navigation>
 		<div class="profilecover">
-			<img class="big_avatar" src="img/avatar.png">
+			<%=image_tag("account_images/avatar.png", class: 'big_avatar')%>
 			<p class="nick">JohnKeny</p>
 			<div class="links">
 			<p class="lnks">Posts</p>
