@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   #root "posts#index"
 
   resources :registration, only: [:new, :create]
-  resources :home, only: [:new]
+  resources :home, only: [:index]
   
   # or it can be
   # get "/registration", to: "registration#new"
