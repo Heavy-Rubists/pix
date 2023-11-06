@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_10_27_232742) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_06_212433) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -20,10 +20,11 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_27_232742) do
 
   create_table "comments", force: :cascade do |t|
     t.text "content", null: false
-    t.bigint "photo_id", null: false
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "photo_id", null: false
+    t.index ["photo_id"], name: "index_comments_on_photo_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
@@ -59,6 +60,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_27_232742) do
     t.bigint "tag_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["photo_id", "tag_id"], name: "index_tag_affiliations_on_photo_id_and_tag_id", unique: true
     t.index ["photo_id"], name: "index_tag_affiliations_on_photo_id"
     t.index ["tag_id"], name: "index_tag_affiliations_on_tag_id"
   end
@@ -75,7 +77,9 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_27_232742) do
     t.string "nickname", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
+  add_foreign_key "comments", "photos"
 end
