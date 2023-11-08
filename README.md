@@ -57,7 +57,7 @@ This is an example of how you may give instructions on setting up your project l
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-You need these softwares:
+Required software:
 - Ruby v3.2.2-1
 - Node.js v20.9.0
 - PostgreSQL v16.0.1
@@ -78,11 +78,11 @@ You need these softwares:
    ```
 
 ### Launch
-1. Open terminal and give this inctruction
+1. Open terminal and give this instruction
    ```sh
    puma
    ```
-2. Open second terminal and give this inctruction
+2. Open second terminal and give this instruction
    ```sh
    foreman start -f Procfile.dev
    ```
