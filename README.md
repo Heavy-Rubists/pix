@@ -76,7 +76,25 @@ You need these softwares:
    ```sh
    ruby gems install
    ```
-   
+
+### Launch
+1. Open terminal and give this inctruction
+   ```sh
+   puma
+   ```
+2. Open second terminal and give this inctruction
+   ```sh
+   foreman start -f Procfile.dev
+   ```
+
+## Contributors
+- Voladsky - Vladislav Krylov
+- PDCreator - Dmitry Anuchin
+- TheBogdichHD - Bogdan Gnatenko
+- grigoriymirosedi - Grigoriy Mirosedi
+- dasha032 - Daria Kolbasina
+- cherevatovm - Maksim Cherevatov 
+- DmytryPan - Dmitry Panikhidin
 
 <!-- LICENSE -->
 ## License
