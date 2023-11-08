@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Voladsky/pix">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <!--img src="images/logo.png" alt="Logo" width="80" height="80"-->
   </a>
 
 <h3 align="center">pix</h3>
@@ -19,19 +19,28 @@
   <p align="center">
     imgur inspired ruby on rails project for MMCS SFEDU
     <br />
-    <a href="https://github.com/Voladsky/pix"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/Voladsky/pix">View Demo</a>
+    <!--a href="https://github.com/Voladsky/pix">View Demo</a>
     ·
     <a href="https://github.com/Voladsky/pix/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Voladsky/pix/issues">Request Feature</a>
+    <a href="https://github.com/Voladsky/pix/issues">Request Feature</a-->
   </p>
 </div>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+A website for browsing and uploading pictures
+
+
+<!-- USAGE EXAMPLES -->
+### Features
+**- Create account and upload pictures**<br>
+**- Delete pictures that you uploaded**<br>
+**- Browse pictures on main page**<br>
+**- Share pictures by sending the link of the picture**<br>
+**- Comment on pictures**<br>
+**- Put pictures in favorites**<br>
+**- Delete pictures from favorites**<br>
 
 
 ### Built With
@@ -72,18 +81,10 @@ This is an example of how to list things you need to use the software and how to
    ```
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -97,13 +98,13 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [issues-shield]: https://img.shields.io/github/issues/Voladsky/pix.svg?style=for-the-badge
 [issues-url]: https://github.com/Voladsky/pix/issues
 [license-shield]: https://img.shields.io/github/license/Voladsky/pix.svg?style=for-the-badge
-[license-url]: https://github.com/Voladsky/pix/blob/master/LICENSE.txt
+[license-url]: https://github.com/Voladsky/pix/blob/master/LICENSE
 [product-screenshot]: images/screenshot.png
-[Node.js]: https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=Nodedotjs&logoColor=white
+[Node.js]: https://img.shields.io/badge/Node.js-233056?style=for-the-badge&logo=Nodedotjs&logoColor=green
 [Node-url]: https://Nodejs.org/
-[tailwindcss.com]: https://img.shields.io/badge/tailwindcss-FF2D20?style=for-the-badge&logo=tailwindcss&logoColor=white
+[tailwindcss.com]: https://img.shields.io/badge/tailwindcss-161D2D?style=for-the-badge&logo=tailwindcss&logoColor=cyan
 [tailwindcss-url]: https://tailwindcss.com
-[RubyonRails.org]: https://img.shields.io/badge/RubyonRails-563D7C?style=for-the-badge&logo=RubyonRails&logoColor=white
+[RubyonRails.org]: https://img.shields.io/badge/RubyonRails-DD0031?style=for-the-badge&logo=RubyonRails&logoColor=white
 [RubyonRails-url]: https://RubyonRails.org
 [Postgresql.org]: https://img.shields.io/badge/Postgresql-0769AD?style=for-the-badge&logo=Postgresql&logoColor=white
 [Postgresql-url]: https://Postgresql.org 
