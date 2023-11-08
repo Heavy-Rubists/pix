@@ -34,13 +34,13 @@ A website for browsing and uploading pictures
 
 <!-- USAGE EXAMPLES -->
 ### Features
-**- Create account and upload pictures**<br>
-**- Delete pictures that you uploaded**<br>
-**- Browse pictures on main page**<br>
-**- Share pictures by sending the link of the picture**<br>
-**- Comment on pictures**<br>
-**- Put pictures in favorites**<br>
-**- Delete pictures from favorites**<br>
+- Create account and upload pictures
+- Delete pictures that you uploaded
+- Browse pictures on main page<br>
+- Share pictures by sending the link of the picture
+- Comment on pictures
+- Put pictures in favorites
+- Delete pictures from favorites
 
 
 ### Built With
@@ -57,29 +57,26 @@ This is an example of how you may give instructions on setting up your project l
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+You need these softwares:
+- Ruby v3.2.2-1
+- Node.js v20.9.0
+- PostgreSQL v16.0.1
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/Voladsky/pix.git
    ```
-3. Install NPM packages
+2. Install bundle
    ```sh
-   npm install
+   bundle install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Install Ruby Gems
+   ```sh
+   ruby gems install
    ```
-
+   
 
 <!-- LICENSE -->
 ## License
