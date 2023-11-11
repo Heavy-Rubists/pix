@@ -4,11 +4,11 @@ class RegistrationController < ApplicationController
 
   def create
     @user = User.new user_params
-    if @user.valid?
-      session[:user_ID] = @user.ID
+    if @user.save && @user.valid?
+      session[:user_id] = @user.id
       redirect_to controller: :home, action: :index
     else
-      redirect_to :new
+      render :new
     end
   end
   private
