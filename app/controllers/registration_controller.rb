@@ -4,8 +4,12 @@ class RegistrationController < ApplicationController
 
   def create
     @user = User.new user_params
-
-    redirect_to controller: :home, action: :index
+    if @user.valid?
+      session[:user_ID] = @user.ID
+      redirect_to controller: :home, action: :index
+    else
+      redirect_to :new
+    end
   end
   private
   def user_params

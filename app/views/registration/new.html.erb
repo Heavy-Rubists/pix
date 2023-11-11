@@ -13,7 +13,7 @@
 <div class="form">
     <div class="title">Welcome to PIX</div>
     <div class="subtitle">Let's create your account!</div>
-    <div class="input-container ic1">
+    <div class="input-container ic1 ">
       <input id="username" class="input" type="text" placeholder=" " />
       <div class="cut"></div>
       <label for="username" class="placeholder">Username</label>
@@ -27,9 +27,9 @@
       <input id="password" class="input" type="password" placeholder=" " />
       <div class="cut"></div>
       <label for="password" class="placeholder">Password</label>
-    </div> 
-    <input type="checkbox" onclick="myFunction()"> Show Password 
-    <script> 
+    </div>
+    <input type="checkbox" onclick="myFunction()"> Show Password
+    <script>
     function myFunction() {
     var x = document.getElementById("password");
     if (x.type === "password") {
@@ -38,8 +38,7 @@
       x.type = "password";
     }
   }
-    </script> 
+    </script>
     <%= button_to "Registry", "/registration", class: "submit", method: :post %>
   </div>
   </body>
-  
