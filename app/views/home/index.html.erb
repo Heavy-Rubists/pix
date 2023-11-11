@@ -1,5 +1,4 @@
-<%= stylesheet_link_tag 'account_style', 'https://fonts.googleapis.com/css?family=Open+Sans:400&subset=latin',
- media: 'all', 'data-turbolinks-track' => true %>
+<%= stylesheet_link_tag 'account_style', media: 'all', 'data-turbolinks-track' => true %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,27 +8,56 @@
 	<title>PIX</title>
 </head>
 <body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 	<header class="page_header">
 		<navigation class="page_navigation">
+			<div class="navigation_container_left">
 			<p class="logo">PIX</p>
 			<button class="new_post_button"><%=image_tag("account_images/plus_button.svg", class: 'plus')%><span class="new_post_button_text">New post</span></button>
+			</div>
+			<div class="navigation_container_center">
 			<input class="search_bar" type="text" placeholder="ok, guys, i guess that's it!">
-			<div class="usr">
+			</div>
+			<div class="navigation_container_right">
 				<span class="nickname">User Name</span>
 				<%=image_tag("account_images/avatar.png", class: 'small_avatar')%>
 			</div>
 		</navigation>
 		<div class="profilecover">
-			<%=image_tag("account_images/avatar.png", class: 'big_avatar')%>
-			<p class="nick">JohnKeny</p>
+			<div class="user"><%=image_tag("account_images/avatar.png", class: 'big_avatar')%>
+			<p class="nick">JohnKeny</p></div>
 			<div class="links">
-			<p class="lnks">Posts</p>
-			<p class="lnks">Favorites</p>
-			<p class="lnks">Comments</p>
-			<p class="lnks">About</p>
+				<%= link_to "Posts", "/posts", class: "lnks" %>
+				<%= link_to "Favorites", "/favorites", class: "lnks" %>
+				<%= link_to "Comments", "/comments", class: "lnks" %>
+				<%= link_to "About", "/about", class: "lnks" %>
 			</div>
 		</div>
 		
 	</header>
+	<section class="main_content">
+		
+	</section>
 </body>
 </html>
