@@ -26,5 +26,6 @@ module Pix
     config.assets.enabled = true
     config.assets.paths << Rails.root.join('/app/assets/fonts')
     config.assets.paths << Rails.root.join('/app/assets/images/account_images')
+    config.assets.paths << Rails.root.join('/app/assets/images/feed_images')
   end
 end

@@ -33,7 +33,7 @@ function topFunction() {
 	<header class="page_header">
 		<navigation class="page_navigation">
 			<div class="navigation_container_left">
-			<p class="logo">PIX</p>
+			<%= button_to "PIX", "/feed", class: "logo", method: :get%>
 			<button class="new_post_button"><%=image_tag("account_images/plus_button.svg", class: 'plus')%><span class="new_post_button_text">New post</span></button>
 			</div>
 			<div class="navigation_container_center">

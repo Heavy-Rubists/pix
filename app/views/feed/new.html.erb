@@ -1,0 +1,75 @@
+<%= stylesheet_link_tag 'feed_style', media: 'all', 'data-turbolinks-track' => true %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIX</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <header class="page_header">
+        <navigation class="page_navigation">
+            <div class="navigation_container_left">
+                <%= button_to "PIX", "/feed", class: "logo", method: :get%>
+                <button class="new_post_button"><%=image_tag("account_images/plus_button.svg", class: 'plus')%><span class="new_post_button_text">New post</span></button>
+            </div>
+            <div class="navigation_container_center">
+                <input class="search_bar" type="text" placeholder="ok, guys, i guess that's it!">
+            </div>
+            <div class="navigation_container_right">
+                <%= button_to "Logout", logout_path, method: :delete %>
+                <%if @user%>
+                <%= @user.nickname%>
+                <% end %>
+                <%=image_tag("account_images/avatar.png", class: 'small_avatar')%>
+            </div>
+        </navigation>
+        <div class="profilecover">
+            <div class="tags_head">
+                <p class="explore_tags">
+                    EXPLORE TAGS
+                </p>
+                <p class="more_tags">
+                    MORE TAGS +
+                </p>
+            </div>
+            <div class="tags">
+                <a href="/mentalhealth" class="tag">
+                    <div class="tag_title">
+                        <h2>
+                            Mental 
+                            Health
+                        </h2>
+                        <p class="posts_amount">
+                            9,721 Posts
+                        </p>
+                    </div>
+                </a>
+            </div>
+    </div>
+    </header>
+    
+</body>
+</html>

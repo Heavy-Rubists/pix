@@ -132,5 +132,24 @@ body {
 }
 
 .submit:active {
-  background-color: #06b;
+  background-color: #08d;
+}
+.show_pass {
+  padding-top: 20px;
+
+}
+.lgin {
+  background-color: rgb(64, 70, 73);
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 30px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  align-self: flex-start;
+  width: 50%;
 }

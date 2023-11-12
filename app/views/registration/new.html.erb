@@ -10,11 +10,12 @@
 	<title>PIX</title>
 </head>
 <body>
-  <%= button_to "Login", "/login", method: :get %>
-<%= form_tag('/registration') do -%>
+  
 <div class="form">
     <div class="title">Welcome to PIX</div>
     <div class="subtitle">Let's create your account!</div>
+    <%= button_to "Go to login", "/login", class: "lgin", method: :get %>
+  <%= form_tag('/registration') do -%>
     <div class="input-container ic1 ">
       <%# <input id="username" class="input" type="text" placeholder=" " /> %>
       <%=text_field_tag 'user[nickname]', nil, class: 'input', id: 'username', placeholder: " " %>
@@ -33,7 +34,7 @@
       <div class="cut"></div>
       <label for="password" class="placeholder">Password</label>
     </div>
-    <input type="checkbox" onclick="myFunction()"> Show Password
+    <div class="show_pass"><input type="checkbox" onclick="myFunction()"> Show Password</div>
     <script>
     function myFunction() {
     var x = document.getElementById("password");
@@ -45,6 +46,6 @@
   }
     </script>
     <%= button_to "Registry", "/registration", class: "submit", method: :post %>
-  </div>
 <% end -%>
+ </div>
   </body>
