@@ -40,7 +40,10 @@ function topFunction() {
 			<input class="search_bar" type="text" placeholder="ok, guys, i guess that's it!">
 			</div>
 			<div class="navigation_container_right">
-				<span class="nickname">User Name</span>
+				<%= button_to "Logout", logout_path, method: :delete %>
+				<%if @user%>
+				<%= @user.nickname%>
+				<% end %>
 				<%=image_tag("account_images/avatar.png", class: 'small_avatar')%>
 			</div>
 		</navigation>

@@ -1,0 +1,43 @@
+<%= stylesheet_link_tag 'style', 'https://fonts.googleapis.com/css?family=Open+Sans:400&subset=latin',
+ media: 'all', 'data-turbolinks-track' => true %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIX</title>
+</head>
+<body>
+  <div class="form">
+<%= form_with url: login_path do |form|%>
+    <div class="title">Welcome to PIX</div>
+    <div class="subtitle">Let's Log in your account!</div>
+    <div class="input-container ic2">
+      <%=form.email_field :email,class: 'input', id: 'email',  placeholder: " " %>
+      <div class="cut cut-short"></div>
+      <label for="email" class="placeholder">Email</label>
+    </div>
+    <div class="input-container ic2">
+      
+      <%=form.password_field :password, class: 'input', id: 'password', placeholder: " " %>
+      <div class="cut"></div>
+      <label for="password" class="placeholder">Password</label>
+    </div>
+    <input type="checkbox" onclick="myFunction()"> Show Password
+    <script>
+    function myFunction() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+    </script>
+    <%# button_to "Login", "/login", class: "submit", method: :get %>
+    <%= form.submit "Log In", class: "submit"%>
+  </div>
+<% end -%>
+</div>
+</body>
+</html>
