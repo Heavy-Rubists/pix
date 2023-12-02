@@ -8,8 +8,12 @@
 	<title>PIX</title>
 </head>
 <body>
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-	<script>
+	<%# <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> %>
+	<div class="back-to-top-container back-to-top-container--intersecting" data-controller="viewport-entrance-toggle" data-viewport-entrance-toggle-class="back-to-top-container--intersecting">
+  <button class="back-to-top__button button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Back to top</button>
+</div>
+</div>
+	<%# <script>
 // Get the button
 let mybutton = document.getElementById("myBtn");
 
@@ -29,7 +33,7 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-</script>
+</script> %>
 	<header class="page_header">
 		<navigation class="page_navigation">
 			<div class="navigation_container_left">

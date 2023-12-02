@@ -21,4 +21,5 @@ Rails.application.routes.draw do
   post "/login", to: "login#create"
   delete "logout", to: "login#destroy"
   get "/feed", to: "feed#new"
+  get "/registration", to: "registration#new"
 end

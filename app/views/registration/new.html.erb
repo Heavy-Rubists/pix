@@ -1,4 +1,3 @@
-
 <%= stylesheet_link_tag 'style', 'https://fonts.googleapis.com/css?family=Open+Sans:400&subset=latin',
  media: 'all', 'data-turbolinks-track' => true %>
 
@@ -16,6 +15,7 @@
     <div class="subtitle">Let's create your account!</div>
     <%= button_to "Go to login", "/login", class: "lgin", method: :get %>
   <%= form_tag('/registration') do -%>
+  
     <div class="input-container ic1 ">
       <%# <input id="username" class="input" type="text" placeholder=" " /> %>
       <%=text_field_tag 'user[nickname]', nil, class: 'input', id: 'username', placeholder: " " %>
@@ -28,24 +28,24 @@
       <div class="cut cut-short"></div>
       <label for="email" class="placeholder">Email</label>
     </div>
+    
     <div class="input-container ic2">
-      <%# <input id="password" class="input" type="password" placeholder=" " /> %>
-      <%=password_field_tag 'user[password]', nil, class: 'input', id: 'password', placeholder: " " %>
-      <div class="cut"></div>
-      <label for="password" class="placeholder">Password</label>
+      <div data-controller="password-visibility" style="height: 100%">
+        <%=password_field_tag 'user[password]', nil, class: 'input', id: 'password', placeholder: " ", data: {"password-visibility-target" =>"input"}, spellcheck:"false" %>
+        <div class="cut"></div>
+        <label for="password" class="placeholder">Password</label>
+        <button type="button" data-action="password-visibility#toggle" class="absolute right-0 top-0 mt-3 mr-2">
+          <span data-password-visibility-target="icon"><span class="material-icons text-gray-300">visibility</span></span>
+          <span data-password-visibility-target="icon" class="hidden"><span class="material-icons text-gray-300">visibility_off</span></span>
+        </button>
+      </div>
     </div>
-    <div class="show_pass"><input type="checkbox" onclick="myFunction()"> Show Password</div>
-    <script>
-    function myFunction() {
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-  }
-    </script>
+    <%# <div class="show_pass"><input type="checkbox" data-action="showpass#show"> Show Password</div> %>
+    <%# <div class="show_pass"><button data-action="showpass#show"> Show Password</div> %>
+    
+    
     <%= button_to "Registry", "/registration", class: "submit", method: :post %>
+    
 <% end -%>
  </div>
   </body>
