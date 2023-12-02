@@ -23,15 +23,17 @@
 			</div>
 			<div class="navigation_container_right">
 				<%= button_to "Logout", logout_path, method: :delete %>
-				<%if @user%>
+				<p class="small_nick"><%if @user%>
 				<%= @user.nickname%>
-				<% end %>
+				<% end %></p>
 				<%=image_tag("account_images/avatar.png", class: 'small_avatar')%>
 			</div>
 		</navigation>
 		<div class="profilecover">
 			<div class="user"><%=image_tag("account_images/avatar.png", class: 'big_avatar')%>
-			 <p class="nick">JohnKeny</p></div>
+			 <p class="nick"><%if @user%>
+				<%= @user.nickname%>
+				<% end %></p></div>
 			
 			<div class="links">
 				<%= link_to "Posts", "/posts", class: "lnks" %>
