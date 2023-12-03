@@ -16,7 +16,8 @@
 		<navigation class="page_navigation">
 			<div class="navigation_container_left">
 			<%= button_to "PIX", "/feed", class: "logo", method: :get%>
-			<button class="new_post_button"><%=image_tag("account_images/plus_button.svg", class: 'plus')%><span class="new_post_button_text">New post</span></button>
+			
+				<%= button_to "", "/upload", class: "new_post_button", method: :get%>
 			</div>
 			<div class="navigation_container_center">
 			<input class="search_bar" type="text" placeholder="ok, guys, i guess that's it!">
@@ -33,7 +34,8 @@
 			<div class="user"><%=image_tag("account_images/avatar.png", class: 'big_avatar')%>
 			 <p class="nick"><%if @user%>
 				<%= @user.nickname%>
-				<% end %></p></div>
+				<% end %></p>
+				</div>
 			
 			<div class="links">
 				<%= link_to "Posts", "/posts", class: "lnks" %>

@@ -22,4 +22,5 @@ Rails.application.routes.draw do
   delete "logout", to: "login#destroy"
   get "/feed", to: "feed#new"
   get "/registration", to: "registration#new"
+  get "/upload", to: "upload#new"
 end

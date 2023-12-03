@@ -68,28 +68,13 @@ body {
 }
 .new_post_button {
 	border-radius: 3px;
-	background: #1BB76E;
+	background-image: url(/assets/account_images/Link.png);
 	box-shadow: 0px 6px 10px 0px rgba(27, 28, 30, 0.31);
 	width: 120.53px;
-	display: flex;
 	height: 35px;
 	padding: 7px 13.8px 6px 9px;
-	align-items: center;
-	
-}
-.plus {
-	width: 22px;
-	height: 22px;
-	flex-shrink: 0;
-}
 
-.new_post_button_text {
-	color: #FFF;
-	font-size: 13.594px;
-	font-style: normal;
-	line-height: 17.25px; /* 126.897% */
-	font-weight: 700;
-	padding-left: 10px;
+	
 }
 
 .search_bar {

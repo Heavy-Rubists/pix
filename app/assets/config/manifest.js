@@ -3,3 +3,4 @@
 //= link style.css
 //= link account_style.css
  //= link feed_style.css
+ //= link upload_style.css
