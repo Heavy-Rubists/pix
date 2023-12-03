@@ -15,7 +15,10 @@
             </p>
         </div>
         <div class="upload_choose">
-            
+            <%= form_tag '/upload', multipart: true do -%>
+            <%= file_field_tag "photo[image]" %>
+            <%= button_to "Upload", "/upload", class: "submit", method: :post %>
+            <% end %>
         </div>
     </div>
 </body>
