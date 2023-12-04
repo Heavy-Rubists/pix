@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Voladsky/pix">
-    <!--img src="images/logo.png" alt="Logo" width="80" height="80"-->
+    <img src="app/assets/images/account_images/logo_pix.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">pix</h3>
