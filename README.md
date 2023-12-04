@@ -11,10 +11,8 @@
 <br />
 <div align="center">
   <a href="https://github.com/Voladsky/pix">
-    <img src="app/assets/images/account_images/logo_pix.png" alt="Logo" width="80" height="80">
+    <img src="app/assets/images/account_images/logo_pix.png" alt="Logo" width="170" height="86">
   </a>
-
-<h3 align="center">pix</h3>
 
   <p align="center">
     imgur inspired ruby on rails project for MMCS SFEDU
