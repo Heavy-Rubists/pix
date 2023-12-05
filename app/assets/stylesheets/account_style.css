@@ -74,7 +74,7 @@ body {
 	height: 35px;
 	padding: 7px 13.8px 6px 9px;
 
-	
+
 }
 
 .search_bar {
@@ -198,7 +198,7 @@ background-color: #30343b;
 	width: 100vw; */
 
   }
-  
+
   .back-to-top__button {
 	position: fixed;
 	bottom: 1rem;
@@ -207,12 +207,12 @@ background-color: #30343b;
 	visibility: visible;
 	transition: all 0.2s ease;
   }
-  
+
   .back-to-top-container--intersecting .back-to-top__button {
 	opacity: 0;
 	visibility: hidden;
   }
-  
+
   .button {
 	-webkit-appearance: none;
 	background-color: rgba(255,255,255,0.85);
@@ -240,12 +240,12 @@ background-color: #30343b;
 	}
 }
 @media (max-width: 991px) {
-	
+
 }
 @media (max-width: 767px) {
-	.new_post_button {
+	/*.new_post_button {
 		display:  none;
-	}
+	}*/
 	.navigation_container_left {
 		min-width:auto;
 	}
@@ -268,5 +268,5 @@ background-color: #30343b;
 	.search_bar {
 		display:  none;
 	}
-	
+
 }
