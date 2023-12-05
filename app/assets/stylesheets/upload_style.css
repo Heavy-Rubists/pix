@@ -36,3 +36,14 @@ body {
     justify-content: center;
     background: radial-gradient(235.94% 157.29% at 50% 50%, #441B6F 0%, rgba(23, 23, 66, 0.00) 100%);
 }
+.upload_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.filefield {
+
+}
+.submit {
+    padding-top: 30px;
+}
