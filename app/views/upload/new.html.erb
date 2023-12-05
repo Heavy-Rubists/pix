@@ -18,6 +18,7 @@
         <div class="upload_choose">
             <%= form_tag '/upload', class: "upload_form", multipart: true do -%>
             <%= file_field_tag "photo[image]", class: "filefield", accept: ".jpg,.jpeg,.png,.gif,.apng,.tiff,.tif,.bmp,.xcf,.webp" %>
+            <%= text_field_tag "photo[description]", "",  class: "description"%>
             <%= button_to "Upload", "/upload", class: "submit", method: :post %>
             <% end %>
         </div>

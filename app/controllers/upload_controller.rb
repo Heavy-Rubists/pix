@@ -11,6 +11,6 @@ class UploadController < ApplicationController
 
     private
     def photo_params
-        params.require(:photo).permit(:image).merge(:user_id => session[:user_id])
+        params.require(:photo).permit(:image, :description).merge(:user_id => session[:user_id])
     end
 end

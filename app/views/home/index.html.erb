@@ -48,7 +48,14 @@
 	</header>
 	<section class="main_content">
 		<%@pictures.each do |picture|%>
-		<%= image_tag  picture.image, class: "user_image" %>
+			<div class="post">
+				<%= image_tag  picture.image, class: "post_image" %>
+				<div class="post_info">
+					<span class="post_description">
+						<%= picture.description %>
+					</span>
+				</div>
+			</div>
 	<%end%>
 	</section>
 </body>
