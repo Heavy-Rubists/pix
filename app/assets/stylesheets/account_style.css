@@ -154,7 +154,7 @@ body {
 	text-decoration: none;
 }
 .main_content {
-	background: #061234;
+	background: #181e31;
 	width: 100%;
 	min-height: 1000px;
 	height: 100%;
@@ -165,10 +165,22 @@ body {
 	padding-top: 3%;
 	gap: 30px;
 }
-.user_image {
+.post {
+	height: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.post_image {
 	width: 250px;
 	height: 250px;
 
+}
+.post_info {
+	background-color: #474a51;
+	height: 50px;
+	
+}
+.post_description {
+	
 }
 
 /* #myBtn {
