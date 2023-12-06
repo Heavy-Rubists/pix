@@ -83,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: pix_production
-  username: pix
+  database: pix
+  username: pix_user
   password: <%= ENV["PIX_DATABASE_PASSWORD"] %>
