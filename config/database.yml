@@ -86,3 +86,4 @@ production:
   database: pix
   username: pix_user
   password: <%= ENV["SECRET_KEY_BASE"] %>
+  url: <%= ENV["DATABASE_URL"] %>
