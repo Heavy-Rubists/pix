@@ -10,6 +10,12 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   #root "posts#index"
 
+  resources :confirmation do
+    member do
+      get :confirm_email
+    end
+  end
+
   resources :registration, only: [:new, :create]
   resources :home, only: [:index]
 
