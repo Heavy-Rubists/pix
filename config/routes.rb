@@ -24,4 +24,5 @@ Rails.application.routes.draw do
   get "/registration", to: "registration#new"
   get "/upload", to: "upload#new"
   post "/upload", to: "upload#create"
+  delete "/upload/:id", to: "upload#destroy", as: "photo"
 end

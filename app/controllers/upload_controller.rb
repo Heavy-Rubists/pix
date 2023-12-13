@@ -9,6 +9,12 @@ class UploadController < ApplicationController
         redirect_to controller: :home, action: :index, notice: "Photo added succesfully!"
     end
 
+    def destroy
+        @photo = Photo.find(params[:id])
+        @photo.destroy
+        redirect_to controller: :home, action: :index, notice: "Photo deleted succesfully."
+    end
+
     private
     def photo_params
         params.require(:photo).permit(:image, :description).merge(:user_id => session[:user_id])
