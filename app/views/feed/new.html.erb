@@ -25,7 +25,9 @@
                 <p class="small_nick"><%if @user%>
 				<%= @user.nickname%>
 				<% end %></p>
-                <%= button_to "", "/home", class: "small_avatar", method: :get%>
+                <%= button_to "/home", class: "small_avatar", method: :get do%>
+                    <%= image_tag("https://robohash.org/" + @user.nickname + ".png") %>
+                <% end %>
             </div>
         </navigation>
         <div class="profilecover">
