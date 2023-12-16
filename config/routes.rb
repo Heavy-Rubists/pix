@@ -24,4 +24,8 @@ Rails.application.routes.draw do
   get "/registration", to: "registration#new"
   get "/upload", to: "upload#new"
   post "/upload", to: "upload#create"
+  get "/posts", to: "home#redirect_to_home"
+  get "/favorites", to: "home#redirect_to_home"
+  get "/comments", to: "home#redirect_to_home"
+  get "/about", to: "home#redirect_to_home"
 end

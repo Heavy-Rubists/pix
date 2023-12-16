@@ -5,4 +5,8 @@ class HomeController < ApplicationController
     @pictures = @user.photos.all
     end
   end
+
+  def redirect_to_home
+    redirect_to_home '/'
+  end
 end
