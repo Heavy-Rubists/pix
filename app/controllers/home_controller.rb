@@ -7,6 +7,6 @@ class HomeController < ApplicationController
   end
 
   def redirect_to_home
-    redirect_to_home '/'
+    redirect_to '/'
   end
 end
