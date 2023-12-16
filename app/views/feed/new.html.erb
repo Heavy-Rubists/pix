@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/account_style.css">
     <title>PIX</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
                 <a href="/mentalhealth" class="tag">
                     <div class="tag_title">
                         <h2>
-                            Mental 
+                            Mental
                             Health
                         </h2>
                         <p class="posts_amount">
@@ -52,7 +53,19 @@
     </div>
     </header>
     <section class="main_content">
-		
-	</section>
+        <%@pictures.each do |picture|%>
+            <div class="post">
+                <%= image_tag  picture.image, class: "post_image" %>
+                <div class="post_info">
+                    <span class="post_description">
+                        <%= picture.description %>
+                    </span>
+                </div>
+              <span class="post_description">
+						    <%= picture.user.nickname %>
+					    </span>
+            </div>
+        <%end%>
+	  </section>
 </body>
 </html>

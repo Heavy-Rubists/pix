@@ -55,6 +55,7 @@
 						<%= picture.description %>
 					</span>
 				</div>
+				<%= button_to "Delete", photo_path(picture), method: :delete %>
 			</div>
 	<%end%>
 	</section>

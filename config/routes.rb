@@ -28,4 +28,5 @@ Rails.application.routes.draw do
   get "/favorites", to: "home#redirect_to_home"
   get "/comments", to: "home#redirect_to_home"
   get "/about", to: "home#redirect_to_home"
+  delete "/upload/:id", to: "upload#destroy", as: "photo"
 end
