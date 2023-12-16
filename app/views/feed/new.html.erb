@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/account_style.css">
     <title>PIX</title>
 </head>
 <body>
@@ -60,8 +61,11 @@
                         <%= picture.description %>
                     </span>
                 </div>
+              <span class="post_description">
+						    <%= picture.user.nickname %>
+					    </span>
             </div>
         <%end%>
-	</section>
+	  </section>
 </body>
 </html>
