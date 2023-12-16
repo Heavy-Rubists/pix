@@ -27,11 +27,11 @@
 				<p class="small_nick"><%if @user%>
 				<%= @user.nickname%>
 				<% end %></p>
-				<%=image_tag("account_images/avatar.png", class: 'small_avatar')%>
+				<%=image_tag("https://robohash.org/" + @user.nickname + ".png", class: 'small_avatar')%>
 			</div>
 		</navigation>
 		<div class="profilecover">
-			<div class="user"><%=image_tag("account_images/avatar.png", class: 'big_avatar')%>
+			<div class="user"><%=image_tag("https://robohash.org/" + @user.nickname + ".png", class: 'big_avatar')%>
 			 <p class="nick"><%if @user%>
 				<%= @user.nickname%>
 				<% end %></p>
