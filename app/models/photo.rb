@@ -10,4 +10,9 @@ class Photo < ApplicationRecord
   #     errors.add(:image, "must have an image attached")
   #   end
   # end
+  
+  validates :image, presence: true
+  validates :image, content_type: ['image/png', 'image/jpg', 'image/jpeg']
+  
+  
 end
