@@ -5,4 +5,8 @@ class HomeController < ApplicationController
     @user = User.find_by(id: session[:user_id])
     @pictures = @user.photos.all
   end
+
+  def redirect_to_home
+    redirect_to '/'
+  end
 end
