@@ -64,7 +64,7 @@
                     </span>
                 </div>
               <span class="post_description">
-						    <%= picture.user.nickname %>
+						    <%= picture.user.try(:nickname) %>
 					    </span>
             </div>
         <%end%>
