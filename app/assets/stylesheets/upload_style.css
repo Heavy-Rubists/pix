@@ -21,6 +21,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+.description {
+    color: #141518;
+}
 .upload_wrapper {
     width: 480px;
     height: 592px;
