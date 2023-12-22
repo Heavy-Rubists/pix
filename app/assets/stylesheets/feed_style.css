@@ -202,6 +202,9 @@ body {
 .post_description {
 
 }
+.description {
+	color: #141518;
+}
 .back-to-top-container {
 	position: absolute;
 	top: 0;
@@ -212,6 +215,7 @@ body {
   }
   
   .back-to-top__button {
+	  color: #141518;
 	position: fixed;
 	bottom: 1rem;
 	right: 2rem;
