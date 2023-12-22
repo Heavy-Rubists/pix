@@ -182,7 +182,9 @@ body {
 .post_description {
 	
 }
-
+.description {
+	color: #141518;
+}
 /* #myBtn {
 	display: none;
 	position: fixed;
@@ -212,6 +214,7 @@ background-color: #30343b;
   }
 
   .back-to-top__button {
+	  color: #141518;
 	position: fixed;
 	bottom: 1rem;
 	right: 2rem;
